@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Fira+Code:wght@300..700&family=Itim&family=Pacifico&display=swap");
+@import url(Octocat.css);
+body {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+.layer {
+  position: fixed; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%;
+}
+.nav {
+  position: sticky;
+  font-size: large;
+  float: left;
+  padding-block-start: 10px;
+}
+.nav a {
+  font-family: "Fira Code", monospace;
+  color: #000000;
+  text-decoration: none;
+  margin-inline-start: 1pc;
+  font-weight: 700;
+}
+.nav a:hover {
+  color: aqua;
+}
+p {
+  font-family: "Fira Code", monospace;
+  color: #000000;
+  display: inline-block;
+  width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 1000;
+  line-height: 0.01;
+
+  /* font-size: 30px; */
+}
+.underscore {
+  display: inline-block;
+}
+.socials {
+  width: 100vw;
+  display: flex;
+  position: re;
+  justify-content: center;
+  gap: 10vw;
+}
+.socials img {
+  width: 50px;
+  height: 10hw;
+  margin: auto;
+  animation: fade 6s;
+}
+@keyframes fade {
+  0%{
+    opacity: 0;
+  }
+}
+.span1{
+  animation: blink-caret 1000ms step-end infinite;
+}
+p:hover span{
+  animation: blink-caret 1000ms step-end infinite;
+}
+@keyframes blink-caret {
+  from, to { color: transparent }
+  50% { color: aqua; }
+}
